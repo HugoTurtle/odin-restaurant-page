@@ -8,7 +8,7 @@ export function createElement(tag, options = {}) {
             element.setAttribute(key, value);
         }
     }
-    return el;
+    return element;
 }
 export function createInputGroup(labelText, type, name) {
     const wrapper = createElement('div', { className: 'input-container' });
