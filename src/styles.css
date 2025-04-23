@@ -34,3 +34,6 @@ header button:hover {
     color: var(--pink);
     cursor: pointer;
 }
+.active {
+    color: var(--pink);
+}
