@@ -1,6 +1,7 @@
 import loadHome from './inital-page-load';
 import loadMenu from './menu';
 import loadContact from './contact';
+import "./styles.css";
 
 document.addEventListener('DOMContentLoaded', () => {
     const homeButton = document.querySelector('#home');

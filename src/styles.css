@@ -3,3 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --dark-blue: #042f4b;
+    --pink: #ed1250;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-blue);
+    min-height: 8vh;
+    color: white;
+}
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+}
+header button:hover {
+    color: var(--pink);
+    cursor: pointer;
+}
