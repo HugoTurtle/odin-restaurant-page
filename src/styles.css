@@ -37,3 +37,17 @@ header button:hover {
 .active {
     color: var(--pink);
 }
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+#content h1{
+    font-size: 3rem;
+    border-bottom: 1px solid black;
+}
+section {
+    margin-top: 40px;
+}
