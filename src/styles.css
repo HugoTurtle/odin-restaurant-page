@@ -71,7 +71,7 @@ header button:hover {
 }
 #content h1{
     font-size: 3rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     font-family: 'space-explorer', sans-serif;
 }
 section {
