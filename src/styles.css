@@ -14,6 +14,12 @@
     --dark-blue: #042f4b;
     --pink: #ed1250;
 }
+body {
+    background-image: url(./assets/images/5509862.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 html,
 body {
     height: 100%;
@@ -28,7 +34,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--dark-blue);
+    background-color: rgba(0,0,0,0.5);
     min-height: 8vh;
     color: white;
     flex-shrink: 0;
@@ -59,10 +65,6 @@ header button:hover {
     color: var(--pink);
 }
 #content {
-    background-image: url(./assets/images/5509862.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
