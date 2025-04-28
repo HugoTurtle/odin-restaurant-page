@@ -42,10 +42,13 @@ export default function initialPageLoad(container) {
 
     // Location section
     const location = createElement('section', { id: 'location' });
-    const area = createElement('p', {text: 'Planet: Roshar'});
+    const locationInfoContainer = createElement('div', {class: 'container'});
     const locationHeading = createElement('h2', { text: 'Location' });
+    const area = createElement('p', {text: 'Planet: Roshar'});
     const address = createElement('p', { text: '123 Shattered Plains' });
-    location.append(locationHeading, area, address);
+    
+    locationInfoContainer.append(area, address);
+    location.append(locationHeading, locationInfoContainer);
 
     // Append everything to the container
     container.append(title, headline, userReview, hoursOfOperation, location);
