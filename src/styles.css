@@ -12,6 +12,7 @@
 }
 :root {
     --pink: #ed1250;
+    --transparent-black: rgba(0,0,0,0.5);
 }
 body {
     background-image: url(./assets/images/5509862.jpg);
@@ -33,7 +34,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.5);
+    background-color: var(--transparent-black);
     min-height: 8vh;
     color: white;
     flex-shrink: 0;
@@ -77,4 +78,13 @@ header button:hover {
 }
 section {
     margin-top: 40px;
+}
+section h2 {
+    color: var(--pink);
+}
+section#headline ~ section {
+    background-color: var(--transparent-black);
+    width: 65%;
+    border-radius: 10px;
+    padding: 15px;
 }
