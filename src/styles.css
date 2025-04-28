@@ -88,3 +88,14 @@ section#headline ~ section {
     border-radius: 10px;
     padding: 15px;
 }
+section#user-reviews article,
+section#hours-of-operation ul,
+section#location div.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#hours-of-operation ul{
+    list-style: none;
+}
