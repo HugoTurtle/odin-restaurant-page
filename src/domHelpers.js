@@ -2,7 +2,9 @@ export function createElement(tag, options = {}) {
     const element = document.createElement(tag);
     if (options.text) element.textContent = options.text;
     if (options.id) element.id = options.id;
-    if (options.className) element.classList.add(options.className);
+    if (options.className || options.class) {
+        element.classList.add(options.className || options.class);
+    }
     if (options.attrs) {
         for (const [key, value] of Object.entries(options.attrs)) {
             element.setAttribute(key, value);
