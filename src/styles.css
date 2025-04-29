@@ -103,3 +103,9 @@ section#menu {
     padding: 25px;
     border-radius: 10px;
 }
+div.menu-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+}
