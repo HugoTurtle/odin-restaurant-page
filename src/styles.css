@@ -124,3 +124,7 @@ span.price-separator {
 section#info > p {
     font-size: 1.6rem;
 }
+.phone-number {
+    font-weight: bolder;
+    letter-spacing: 1.2px;
+}

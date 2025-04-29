@@ -7,7 +7,7 @@ export default function contactPageLoad(container) {
     const info = createElement('section', {id: 'info'});
     const address = createElement('p', {text: '123 Shattered Plains'});
     const area = createElement('p', {text: 'Planet: Roshar'});
-    const phoneNumber = createElement('p', {text: '123-456-7890'});
+    const phoneNumber = createElement('p', {text: '(123) 456-COSMERE 7890', class: 'phone-number'});
     const infoEmail = createElement('p');
     infoEmail.append(
         document.createTextNode('For all other inquiries please email '),
