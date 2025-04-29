@@ -98,7 +98,8 @@ section#headline ~ section {
 ul{
     list-style: none;
 }
-section#menu {
+section#menu,
+.contact .grid-wrapper {
     background-color: var(--transparent-black);
     padding: 25px;
     border-radius: 10px;
@@ -116,4 +117,7 @@ span.price-separator {
     margin-left: 10px;
     margin-right: 10px;
     color: var(--pink);
+} 
+.contact .grid-wrapper {
+    margin-top: 45px;
 }

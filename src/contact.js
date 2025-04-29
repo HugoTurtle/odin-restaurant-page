@@ -22,7 +22,10 @@ export default function contactPageLoad(container) {
     form.append(fullNameGroup, emailGroup, messageGroup);
     formContainer.append(form);
 
-    container.append(title, info, formContainer);
+    const girdWrapper = createElement('div', {class: 'grid-wrapper'});
+    girdWrapper.append(info, formContainer);
+
+    container.append(title, girdWrapper);
 
     return container;
 }
