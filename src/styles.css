@@ -98,3 +98,8 @@ section#headline ~ section {
 ul{
     list-style: none;
 }
+section#menu {
+    background-color: var(--transparent-black);
+    padding: 25px;
+    border-radius: 10px;
+}
