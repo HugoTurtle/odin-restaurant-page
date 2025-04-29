@@ -109,3 +109,11 @@ div.menu-item-container {
     align-items: center;
     font-size: 1.3rem;
 }
+span.price-separator {
+    flex-grow: 1;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--pink);
+}

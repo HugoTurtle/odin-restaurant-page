@@ -42,9 +42,10 @@ export default function menuPageLoad(container) {
         const listItem = createElement('li')
         const menuItemContainer = createElement('div', {class: 'menu-item-container'});
         const menuName = createElement('h3', { text: name });
+        const priceSeparator = createElement('span', {class: 'price-separator'})
         const menuPrice = createElement('p', {text: price});
 
-        menuItemContainer.append(menuName, menuPrice);
+        menuItemContainer.append(menuName, priceSeparator, menuPrice);
         listItem.append(menuItemContainer);
       
         if (description) {
