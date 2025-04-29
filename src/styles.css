@@ -121,3 +121,6 @@ span.price-separator {
 .contact .grid-wrapper {
     margin-top: 45px;
 }
+section#info > p {
+    font-size: 1.6rem;
+}

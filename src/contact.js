@@ -8,7 +8,12 @@ export default function contactPageLoad(container) {
     const address = createElement('p', {text: '123 Shattered Plains'});
     const area = createElement('p', {text: 'Planet: Roshar'});
     const phoneNumber = createElement('p', {text: '123-456-7890'});
-    const infoEmail = createElement('p', {text: 'For all other inquiries please email kaladin@stormlightarchive.fake-email'});
+    const infoEmail = createElement('p');
+    infoEmail.append(
+        document.createTextNode('For all other inquiries please email '),
+        createElement('br'),
+        document.createTextNode('kaladin@stormlightarchive.fake-email')
+    )
         
     info.append(area, address, phoneNumber, infoEmail);
 
