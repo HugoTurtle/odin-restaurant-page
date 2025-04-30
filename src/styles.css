@@ -177,3 +177,6 @@ button.contact-button {
     border: none;
     height: 35px;
 }
+button.contact-button:hover {
+    cursor: pointer;
+}
