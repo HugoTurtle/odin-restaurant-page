@@ -12,8 +12,16 @@ export default function contactPageLoad(container) {
     infoEmail.append(
         document.createTextNode('For all other inquiries please email '),
         createElement('br'),
-        document.createTextNode('kaladin@stormlightarchive.fake-email')
-    )
+        createElement('a', {
+            text: 'kaladin@stormlightarchive.fake-email',
+            class: 'email-link',
+            attrs: {
+                href: 'https://github.com/HugoTurtle',
+                target: '_blank',
+                rel: 'noopener noreferrer'
+            }
+        })
+    );
         
     info.append(area, address, phoneNumber, infoEmail);
 
