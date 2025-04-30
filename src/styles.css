@@ -120,6 +120,9 @@ span.price-separator {
 } 
 .contact .grid-wrapper {
     margin-top: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
 }
 section#info > p {
     font-size: 1.6rem;
@@ -138,7 +141,6 @@ form {
 }
 input, 
 label {
-    width: 250px;
     letter-spacing: 1.2px;
     font-size: 1rem;
 }
@@ -157,8 +159,11 @@ textarea {
     background-color: var(--transparent-black);
 }
 textarea {
-    width: 250px; 
     font-size: 1rem;
     height: 200px;
     resize: none;
+}
+input, 
+textarea {
+    width: 350px;
 }
