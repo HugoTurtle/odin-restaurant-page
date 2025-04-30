@@ -36,7 +36,15 @@ export default function contactPageLoad(container) {
 
     messageGroup.append(msgLabel, msgTextArea);
 
-    const formButton = createElement('button', {text: 'SEND', class:'contact-button'});
+    const formButton = createElement('button', {
+            text: 'SEND', 
+            class:'contact-button',
+            attrs: { type:'button' },
+        });
+    
+    formButton.addEventListener('click', () => {
+        window.open('https://github.com/HugoTurtle', '_blank');
+    });
 
     form.append(fullNameGroup, emailGroup, messageGroup, formButton);
     formContainer.append(form);
