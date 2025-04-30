@@ -159,4 +159,6 @@ textarea {
 textarea {
     width: 250px; 
     font-size: 1rem;
+    height: 200px;
+    resize: none;
 }
