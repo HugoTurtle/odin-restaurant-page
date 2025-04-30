@@ -31,12 +31,14 @@ export default function contactPageLoad(container) {
     const fullNameGroup = createInputGroup('Full Name:', 'text', 'username');
     const emailGroup = createInputGroup('Email:', 'email', 'userEmail');
     const messageGroup = createElement('div', {class:'input-container'});
-    const msgLabel = createElement('label', {text:'Your Message'})
+    const msgLabel = createElement('label', {text:'Your Message:'})
     const msgTextArea = createElement('textarea');
-    
+
     messageGroup.append(msgLabel, msgTextArea);
 
-    form.append(fullNameGroup, emailGroup, messageGroup);
+    const formButton = createElement('button', {text: 'SEND', class:'contact-button'});
+
+    form.append(fullNameGroup, emailGroup, messageGroup, formButton);
     formContainer.append(form);
 
     const girdWrapper = createElement('div', {class: 'grid-wrapper'});
