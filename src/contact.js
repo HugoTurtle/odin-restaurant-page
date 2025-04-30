@@ -30,7 +30,11 @@ export default function contactPageLoad(container) {
 
     const fullNameGroup = createInputGroup('Full Name:', 'text', 'username');
     const emailGroup = createInputGroup('Email:', 'email', 'userEmail');
-    const messageGroup = createInputGroup('Your Message:', 'text', 'userMsg')
+    const messageGroup = createElement('div', {class:'input-container'});
+    const msgLabel = createElement('label', {text:'Your Message'})
+    const msgTextArea = createElement('textarea');
+    
+    messageGroup.append(msgLabel, msgTextArea);
 
     form.append(fullNameGroup, emailGroup, messageGroup);
     formContainer.append(form);

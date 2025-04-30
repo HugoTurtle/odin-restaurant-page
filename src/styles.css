@@ -131,3 +131,32 @@ section#info > p {
 .email-link {
     color: var(--pink);
 }
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input, 
+label {
+    width: 250px;
+    letter-spacing: 1.2px;
+    font-size: 1rem;
+}
+label {
+    display: block;
+    font-size: 1.2rem;
+}
+input,
+textarea {
+    display: inline-block;
+    appearance: none;
+    border: 1px solid silver;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px 8px;
+    background-color: var(--transparent-black);
+}
+textarea {
+    width: 250px; 
+    font-size: 1rem;
+}
